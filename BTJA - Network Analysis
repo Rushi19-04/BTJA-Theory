@@ -1,0 +1,39 @@
+# 🌐 BTJA - Network Analysis
+
+## 🔧 Tools Used:
+- **Wireshark** – Hands-on for all packet capture & analysis tasks
+- **TCPDump** – Covered in theory (replaced with Wireshark)
+
+---
+
+## 📚 Topics Covered:
+
+### 🧠 What is Network Analysis?
+- Process of capturing, inspecting, and analyzing network traffic.
+- Helps detect suspicious activity, troubleshoot issues, or understand communication flow.
+- Essential skill for SOC analysts, blue teamers, and DFIR professionals.
+
+---
+
+## 🛰️ Wireshark (Hands-On)
+
+### 🧪 What I Did:
+- Captured live network packets
+- Applied filters to inspect:
+  - Specific protocols (`http`, `tcp.port == 80`)
+  - Communication between IPs (`ip.addr == 192.168.X.X`)
+- Followed full **TCP streams** to view complete conversations (e.g., login attempts, HTTP requests)
+- Used **Endpoints tab** to:
+  - Identify active IPv4/IPv6 addresses
+  - Analyze communication flows
+  - View packet/byte stats per endpoint
+- Explored **Statistics > Protocol Hierarchy** and **IO Graphs** for traffic trends and breakdowns
+
+---
+
+## 📚 TCPDump (Theory)
+- CLI-based packet capture tool
+- Syntax learned (not used practically):
+  ```bash
+  sudo tcpdump -i eth0
+  sudo tcpdump -nn -v port 80
