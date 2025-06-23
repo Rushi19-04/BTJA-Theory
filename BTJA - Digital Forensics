@@ -1,0 +1,107 @@
+
+# 🧪 BTJA - Digital Forensics
+
+## 🔍 What is Digital Forensics?
+Digital forensics involves identifying, preserving, analyzing, and presenting digital evidence. It's commonly used in:
+- SOC operations
+- Incident response
+- Threat investigations
+- Legal and compliance scenarios
+
+---
+
+## 📌 Real-World Applications:
+- Investigating data breaches
+- Recovering deleted/hidden files
+- Analyzing malicious insider behavior
+- Uncovering digital trails left by attackers
+
+---
+
+## 🔧 Tools & Techniques Learned:
+
+### 🖥️ 1. Linux CLI for File Investigation
+Used CLI commands to explore, inspect, and validate file integrity:
+
+| Command   | Use                                                                 |
+|-----------|----------------------------------------------------------------------|
+| `ls`      | List files and directories                                           |
+| `cat`     | View file contents                                                   |
+| `head`    | Show the first few lines of a file                                   |
+| `strings` | Extract printable strings from binary files                          |
+| `file`    | Identify actual file type, useful to detect fake extensions          |
+| `grep`    | Search for keywords inside files                                     |
+| `find`    | Locate files and folders with specific names or extensions           |
+
+Example:
+```bash
+file image.jpg
+strings binaryfile | grep flag
+head notes.txt
+````
+
+---
+
+### 🖼️ 2. Steganography with Steghide
+
+Learned to detect and extract hidden data from images or audio files.
+
+#### Commands Used:
+
+```bash
+steghide extract -sf image.jpg
+steghide embed -cf cover.jpg -ef secret.txt
+```
+
+* `-sf`: source file (the one containing hidden data)
+* `-cf`: cover file (carrier file)
+* `-ef`: embedded file (data to hide or extract)
+
+---
+
+### 🔐 3. Cracking Password-Protected ZIPs (fcrackzip)
+
+#### 🔧 Brute-force Attack:
+
+```bash
+fcrackzip -u -c a1 -l 4-6 secret.zip
+```
+
+* `-u`: unzip test after cracking
+* `-c a1`: character set (lowercase + digits)
+* `-l`: length range (4 to 6)
+
+#### 📖 Dictionary Attack (with rockyou.txt):
+
+```bash
+fcrackzip -D -p /usr/share/wordlists/rockyou.txt -u secret.zip
+```
+
+Learned to:
+
+* Launch both brute-force and dictionary attacks
+* Understand charset options (a = lowercase, 1 = digits, etc.)
+* Use real-world password lists like **rockyou.txt**
+
+---
+
+## 🧪 Final Practical Quiz:
+
+* Solved practical challenges using all above techniques
+* Identified hidden or renamed files
+* Analyzed suspicious file behavior and metadata
+* Extracted embedded secrets from stego files
+* Cracked ZIP file passwords and recovered protected data
+
+---
+
+## 🧠 Key Learnings Summary:
+
+* Built strong command-line investigation skills
+* Learned to uncover hidden content using `strings`, `file`, and `steghide`
+* Practiced cracking ZIP files using fcrackzip with both methods
+* Improved detection of disguised or malicious files in a forensic context
+* 90–95% hands-on — a highly practical, skills-first experience
+
+```
+
