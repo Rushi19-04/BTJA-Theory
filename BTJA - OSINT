@@ -1,23 +1,28 @@
+###📘 BTJA – OSINT Module: Notes 
 
-### 🕵️ OSINT – Completed
+##🔍 What I Learned:
 
-#### 🔧 Tools Explored:
+🛠️ OSINT Tools Explored:
 
-* **Maltego**: Used for visualizing relationships between domains, emails, IPs, and people. Helped understand how link analysis can uncover hidden connections.
-* **Google Dorks**: Learned how to use advanced Google search operators (like `site:`, `intitle:`, `inurl:`) to find specific and sometimes sensitive information not easily visible through normal searches.
-* **Google Reverse Image Search**: Practiced identifying the source and context of images — useful for verifying authenticity or locating original sources.
-* **TinEye**: Similar to Google Images but with additional capabilities like sorting by oldest or image tracking, helpful in tracing reused images.
+Maltego: Used for link analysis and visual mapping of data relationships (emails, domains, usernames).
 
-#### 🧪 Practical Task Performed:
+Google Dorks: Used advanced Google search operators to dig up exposed documents, credentials, and index leaks.
 
-* Started with a **target profile on Twitter** – observed bio, usernames, linked content, and engagement patterns.
-* Used **Google Search** to pivot from the Twitter handle to related content.
-* Found a **blog linked to the individual**, which revealed deeper details.
-* Collected key information from all platforms and pieced together identity clues.
-* Completed all **QnA tasks** by verifying information across different OSINT sources.
+TinEye: Reverse image search engine for finding similar images and verifying sources.
 
-#### ✅ Outcome:
+Google Images: Used to perform image-based lookups and trace file origins or duplicates.
 
-* Successfully applied OSINT tools in a real-world investigation scenario.
-* Understood how social media, blogs, and open data can be used to track or validate digital identities.
+##🧪 Hands-On Task:
+Searched specific targeted terms on Twitter and analyzed related data.
+
+Found a relevant blog through Google and identified details based on provided clues.
+
+Completed QnA-style challenges to validate findings.
+
+##💡 Key Skills Gained:
+Investigating email, name, and image-based traces using free tools.
+
+Mapping out digital footprints with minimal data.
+
+Understanding how public info can be leveraged in investigations.
 
