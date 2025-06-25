@@ -1,29 +1,74 @@
-📓 Threat Hunting – BTJA Notes
-🔧 Tools & Techniques
-Redline Tool
+🧠 What is Threat Hunting?
+Proactive approach to detecting advanced threats that bypass traditional security tools.
 
-Used for endpoint investigation (collects volatile + non-volatile data)
+Focuses on uncovering IOCs (Indicators of Compromise) and TTPs (Tactics, Techniques & Procedures) used by attackers.
 
-Helps detect rootkits, malware artifacts, suspicious memory patterns
+Combines threat intelligence + human analysis.
 
-Generates timeline & indicators of compromise (IOCs)
+🔧 Tool: Redline
+Developed by FireEye/Mandiant
 
-🧪 File Hashing
-Purpose: File integrity check, malware detection, verification
+Collects forensic data from a live endpoint:
 
-Common Hashing Algorithms:
+Processes, loaded DLLs
 
-MD5 – 128-bit (fast but weak, collision-prone)
+Network connections
 
-SHA-1 – 160-bit (stronger than MD5 but now deprecated)
+Scheduled tasks
 
-SHA-256 – 256-bit (secure, widely used)
+Registry modifications
 
-Tools: sha256sum, md5sum, certutil, online tools
+Memory strings, event logs
 
-🎓 Certification Awareness
-Learned about eLearnSecurity certs (like eCTHP, eCIR)
+Can create a timeline of suspicious activity
 
-Practical-oriented blue team certs
+Used heavily in incident response and APT investigations
 
-Valued in SOC/DFIR roles
+🛠️ Use Case:
+
+Detecting malware persistence
+
+Analyzing artifacts left by attacks that AV might miss
+
+🧪 File Hashing & Integrity Validation
+Hashing = generating a unique fixed-length string (digest) from a file’s contents.
+
+Algorithm	Bits	Purpose	Security
+MD5	128	Legacy checksums, fast	Weak (collisions)
+SHA-1	160	Deprecated due to collision flaws	Moderate
+SHA-256	256	Modern standard in security tools	Strong
+
+🧰 Tools to Generate Hashes:
+
+Linux:
+
+bash
+Copy
+Edit
+md5sum file.zip
+sha256sum file.exe
+Windows:
+
+bash
+Copy
+Edit
+certutil -hashfile file.txt SHA256
+Online: VirusTotal, online hash checkers
+
+📌 Why Hashing?
+
+Check if a file is tampered
+
+Detect duplicates
+
+Identify malware samples by comparing with threat intelligence feeds
+
+🎓 Certification Awareness (ElearnSecurity)
+Introduced to eLearnSecurity Blue Team Certs:
+
+Cert Name	Focus Area
+eCIR	Incident Response
+eCTHP	Threat Hunting & Malware Analysis
+eCRE	Reverse Engineering
+
+🧠 All are hands-on practical exams, respected in SOC & IR roles.
