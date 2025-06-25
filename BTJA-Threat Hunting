@@ -1,0 +1,29 @@
+📓 Threat Hunting – BTJA Notes
+🔧 Tools & Techniques
+Redline Tool
+
+Used for endpoint investigation (collects volatile + non-volatile data)
+
+Helps detect rootkits, malware artifacts, suspicious memory patterns
+
+Generates timeline & indicators of compromise (IOCs)
+
+🧪 File Hashing
+Purpose: File integrity check, malware detection, verification
+
+Common Hashing Algorithms:
+
+MD5 – 128-bit (fast but weak, collision-prone)
+
+SHA-1 – 160-bit (stronger than MD5 but now deprecated)
+
+SHA-256 – 256-bit (secure, widely used)
+
+Tools: sha256sum, md5sum, certutil, online tools
+
+🎓 Certification Awareness
+Learned about eLearnSecurity certs (like eCTHP, eCIR)
+
+Practical-oriented blue team certs
+
+Valued in SOC/DFIR roles
