@@ -41,18 +41,16 @@ SHA-256	256	Modern standard in security tools	Strong
 🧰 Tools to Generate Hashes:
 
 Linux:
-
 bash
-Copy
-Edit
+```
 md5sum file.zip
 sha256sum file.exe
+```
 Windows:
-
 bash
-Copy
-Edit
+```
 certutil -hashfile file.txt SHA256
+```
 Online: VirusTotal, online hash checkers
 
 📌 Why Hashing?
