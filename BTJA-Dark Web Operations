@@ -1,0 +1,50 @@
+🕵️ Dark Web Operations — BTJA Module Notes 
+🌐 Internet Layers Overview
+Layer	Access Method	Indexed?	Example
+Surface Web	Browser	✅ Yes	Google, news, Wikipedia
+Deep Web	Login required	❌ No	Banking portals, cloud drives
+Dark Web	Tor browser	❌ No	.onion sites, illegal forums
+
+💻 Role of the Dark Web in Cybercrime
+Used by cybercriminals for:
+
+*Selling stolen credentials, malware, exploits
+*Ransomware-as-a-Service platforms
+*Leaking compromised data (PII dumps, databases)
+*Buying fake documents, IDs, and illegal goods
+
+🛠️ Accessed via:
+
+Tor browser (anonymity tool)
+
+Hidden service domains: .onion
+
+⚠️ Why it matters in Cybersecurity:
+
+Threat intel teams monitor dark web for:
+
+Leaked internal credentials
+
+Brand impersonation
+
+Precursor signs to ransomware attacks
+
+🕵️‍♂️ Practical Task Performed
+✅ Hands-on Investigation:
+
+Accessed a dark web .onion site via Tor
+
+Read through forums/posts related to criminal activities
+
+Analyzed details from threads, clues, and metadata
+
+Used information to answer scenario-based questions:
+
+Who the criminal was
+
+What crime was being planned
+
+What indicators were visible
+
+🎯 Real-world application of dark web OSINT investigation.
+
